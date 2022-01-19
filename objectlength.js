@@ -7,6 +7,12 @@ function skillLength(student) {
     return Object.keys(student.skills).length;
 }
 
+function checkGraphicDesignProprty(student) {
+    let graphicdesign = Object.keys(student).filter(element => element == 'graphicsDesign')
+    if (graphicdesign.length > 0)
+        return true;
+        return false;
+}
 const student = {
     name: 'David',
     age: 25,
@@ -28,5 +34,6 @@ const student = {
     }
 }
 
-console.log(objectLength(student))
-console.log(skillLength(student));
+// console.log(objectLength(student))
+// console.log(skillLength(student));
+console.log(checkGraphicDesignProprty(student));
