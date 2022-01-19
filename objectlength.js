@@ -3,7 +3,9 @@ function objectLength(student) {
     return objLen;
 }
 
-
+function skillLength(student) {
+    return Object.keys(student.skills).length;
+}
 
 const student = {
     name: 'David',
@@ -27,3 +29,4 @@ const student = {
 }
 
 console.log(objectLength(student))
+console.log(skillLength(student));
