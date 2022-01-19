@@ -1,18 +1,26 @@
+//returns the length of the student object;
 function objectLength(student) {
     let objLen = Object.keys(student).length;
     return objLen;
 }
 
+//returns the length of the skill object keys or values
 function skillLength(student) {
     return Object.keys(student.skills).length;
 }
-
+//check if object include graphicsDesign property
 function checkGraphicDesignProprty(student) {
     let graphicdesign = Object.keys(student).filter(element => element == 'graphicsDesign')
     if (graphicdesign.length > 0)
         return true;
         return false;
 }
+//iterate through student property
+function keysOfObject(student) {
+    let keys = Object.keys(student);
+    return keys;
+}
+
 const student = {
     name: 'David',
     age: 25,
